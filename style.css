@@ -1,0 +1,150 @@
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: none;
+    color: inherit;
+}
+/* End Reset Styles */
+
+/* Base Styles */
+html {
+    --dark-gray: #242424;
+    --white: #f0f0f0;
+    --yellow: #f8faad;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: var(--dark-gray);
+    color: var(--white);
+    min-height: 100vh;
+}
+/* End Base Styles */
+
+/* Utilities Styles */
+.wrapper {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    --padding-horizontal: 2.5rem;
+    padding-left: var(--padding-horizontal);
+    padding-right: var(--padding-horizontal);
+}
+
+.btn {
+    padding: 12px 24px;
+    background-color: var(--yellow);
+    color: var(--dark-gray);
+    border-radius: 8px;
+    font-weight: 600;
+    transition: transform 0.2s ease-in-out;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+/* End Utilities Styles */
+
+/* Nav Styles */
+.nav {
+    padding: 36px 0;
+}
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    width: 60px;
+    object-fit: contain;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 72px;
+}
+
+.nav-link {
+    font-weight: 600;
+}
+
+.nav-link:not(.btn):hover {
+    color: var(--yellow);
+}
+
+.nav-mobile-close-btn {
+    display: none;
+    position: absolute;
+    top: 45px;
+    right: 40px;
+}
+
+.nav-mobile-menu-btn {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .nav-logo {
+        width: 45px;
+    }
+
+    .nav-links {
+        gap: 48px;
+        flex-direction: column;
+        position: fixed;
+        inset: 0;
+        justify-content: center;
+        background-color: var(--dark-gray);
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .nav-links.open {
+        transform: translateX(0%);
+    }
+
+    .nav-link.btn {
+        margin-top: 60px;
+    }
+
+    .nav-mobile-close-btn {
+        display: block;
+    }
+
+    .nav-mobile-menu-btn {
+        display: block;
+    }
+
+    .nav-mobile-menu-btn svg,
+    .nav-mobile-close-btn svg {
+        width: 30px;
+        height: 30px;
+    }
+}
+/* End Nav Styles */
