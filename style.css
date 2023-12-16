@@ -29,6 +29,7 @@ button {
 /* Base Styles */
 html {
     --dark-gray: #242424;
+    --dark-gray-rgb: 36, 36, 36;
     --white: #f0f0f0;
     --yellow: #f8faad;
     scroll-behavior: smooth;
@@ -102,7 +103,6 @@ body {
 
 /* Nav Styles */
 .nav {
-    position: relative;
     padding: 36px 0;
     z-index: 50;
 }
@@ -155,8 +155,10 @@ body {
         flex-direction: column;
         position: fixed;
         inset: 0;
+        z-index: 50;
         justify-content: center;
-        background-color: var(--dark-gray);
+        background-color: rgba(var(--dark-gray-rgb), 0.8);
+        backdrop-filter: blur(10px);
         transform: translateX(100%);
         transition: transform 0.3s ease-in-out;
     }
@@ -235,6 +237,10 @@ body {
         flex-direction: column;
     }
 
+    .intro-img {
+        margin: auto;
+    }
+
     .intro-heading {
         font-size: 80px;
     }
@@ -252,7 +258,7 @@ body {
 
 /* About Us Styles */
 .about-us {
-    padding: 120px 0;
+    padding-bottom: 50px;
 }
 
 .about-us-wrapper {
@@ -278,6 +284,7 @@ body {
 @media (max-width: 768px) {
     .about-us-wrapper {
         flex-direction: column;
+        text-align: center;
     }
 
     .about-us-content {
@@ -285,6 +292,9 @@ body {
     }
     .about-us-p {
         font-size: 16px;
+        max-width: 50ch;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 /* End About Us Styles */
