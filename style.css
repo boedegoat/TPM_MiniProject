@@ -34,7 +34,12 @@ html {
     --yellow: #f8faad;
     scroll-behavior: smooth;
     font-family: 'Montserrat', sans-serif;
-    scroll-padding-top: 40px;
+    scroll-padding-top: 120px;
+}
+
+::selection {
+    background-color: black;
+    color: var(--yellow);
 }
 
 body {
@@ -151,8 +156,18 @@ body {
 
 /* Nav Styles */
 .nav {
-    padding: 36px 0;
+    position: sticky;
+    top: 0;
+    background-color: var(--dark-gray);
+    --padding-vertical: 36px;
+    padding: var(--padding-vertical) 0;
     z-index: 50;
+    transition: padding 0.5s ease-in-out;
+}
+
+.nav.scrolled {
+    --padding-vertical: 18px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .nav-wrapper {
@@ -471,6 +486,15 @@ body {
 .footer-link {
     width: 40px;
     height: 40px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.footer-link:hover {
+    transform: scale(1.1);
+}
+
+.footer-link:active {
+    transform: scale(0.9);
 }
 
 .footer-address {

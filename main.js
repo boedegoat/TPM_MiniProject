@@ -1,7 +1,16 @@
+const nav = document.querySelector('.nav')
 const navMenuBtn = document.querySelector('.nav-mobile-menu-btn')
 const navCloseBtn = document.querySelector('.nav-mobile-close-btn')
 const navLinks = document.querySelector('.nav-links')
 const navLinkItems = document.querySelectorAll('.nav-link')
+
+window.addEventListener('scroll', () => {
+    if (window.pageYOffset > 0) {
+        nav.classList.add('scrolled')
+    } else {
+        nav.classList.remove('scrolled')
+    }
+})
 
 navMenuBtn.addEventListener('click', () => {
     navLinks.classList.add('open')
