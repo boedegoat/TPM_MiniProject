@@ -12,6 +12,8 @@
             href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
             rel="stylesheet"
         />
+        <!-- AOS -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     </head>
     <body>
         <main>
@@ -24,11 +26,11 @@
                         </a>
                     </div>
                     <div class="nav-right">
-                        <button class="nav-mobile-menu-btn">
+                        <button class="nav-mobile-menu-btn" aria-label="Open Menu">
                             <i data-lucide="menu"></i>
                         </button>
                         <div class="nav-links">
-                            <button class="nav-mobile-close-btn">
+                            <button class="nav-mobile-close-btn" aria-label="Close Menu">
                                 <i data-lucide="x"></i>
                             </button>
                             <a href="#" class="nav-link">Home</a>
@@ -45,11 +47,28 @@
             <section id="intro" class="intro">
                 <div class="wrapper intro-wrapper">
                     <div class="intro-content">
-                        <h1 class="intro-heading">Tretify<small>.id</small></h1>
-                        <p class="intro-p">face the race and elevate your pace</p>
-                        <a href="#" class="btn intro-cta">Let's Talk</a>
+                        <h1 class="intro-heading" data-aos="fade-up" data-aos-duration="1500">
+                            Tretify<small>.id</small>
+                        </h1>
+                        <p
+                            class="intro-p"
+                            data-aos="fade-up"
+                            data-aos-duration="1500"
+                            data-aos-delay="300"
+                        >
+                            face the race and elevate your pace
+                        </p>
+                        <a
+                            href="#"
+                            class="btn intro-cta"
+                            data-aos="fade-up"
+                            data-aos-duration="1500"
+                            data-aos-delay="600"
+                            data-aos-offset="0"
+                            >Let's Talk</a
+                        >
                     </div>
-                    <div class="intro-img">
+                    <div class="intro-img" data-aos="fade-right" data-aos-duration="1500">
                         <img src="./images/intro-img.png" alt="intro image" />
                     </div>
                 </div>
@@ -59,12 +78,14 @@
             <!-- About Us Section -->
             <section id="about-us" class="about-us">
                 <div class="wrapper about-us-wrapper">
-                    <div class="about-us-img">
+                    <div class="about-us-img" data-aos="fade-right" data-aos-duration="1500">
                         <img src="./images/rocket.png" alt="rocket" />
                     </div>
                     <div class="about-us-content">
-                        <h2 class="heading-underline">About Us</h2>
-                        <p class="about-us-p">
+                        <h2 class="heading-underline" data-aos="fade-up" data-aos-duration="1500">
+                            About Us
+                        </h2>
+                        <p class="about-us-p" data-aos="fade-up" data-aos-duration="1800">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam blandit
                             mi quis scelerisque feugiat. Ut vulputate metus et dolor ultricies
                             sagittis. Curabitur dignissim, enim sed vestibulum eleifend, dolor purus
@@ -80,9 +101,16 @@
             <!-- Our Services Section -->
             <section id="our-services" class="our-services">
                 <div class="wrapper our-services-wrapper">
-                    <h2 class="heading-underline">Our Services</h2>
+                    <h2 class="heading-underline" data-aos="fade-up" data-aos-duration="1500">
+                        Our Services
+                    </h2>
                     <ul class="our-services-list">
-                        <li class="our-services-item">
+                        <li
+                            class="our-services-item"
+                            data-aos="fade-up"
+                            data-aos-duration="1500"
+                            data-aos-offset="-100"
+                        >
                             <img src="./images/digital-marketing.png" alt="digital-marketing" />
                             <h3 class="our-services-item-heading">Digital Marketing</h3>
                             <p class="our-services-item-p">
@@ -93,7 +121,13 @@
                             </p>
                             <a href="#" class="our-services-item-link">Read Details >></a>
                         </li>
-                        <li class="our-services-item">
+                        <li
+                            class="our-services-item"
+                            data-aos="fade-up"
+                            data-aos-duration="1500"
+                            data-aos-delay="300"
+                            data-aos-offset="-100"
+                        >
                             <img src="./images/web-design.png" alt="web-design" />
                             <h3 class="our-services-item-heading">Web Design</h3>
                             <p class="our-services-item-p">
@@ -104,7 +138,13 @@
                             </p>
                             <a href="#" class="our-services-item-link">Read Details >></a>
                         </li>
-                        <li class="our-services-item">
+                        <li
+                            class="our-services-item"
+                            data-aos="fade-up"
+                            data-aos-duration="1500"
+                            data-aos-delay="400"
+                            data-aos-offset="-100"
+                        >
                             <img
                                 src="./images/social-media-advertising.png"
                                 alt="social-media-advertising"
@@ -118,7 +158,13 @@
                             </p>
                             <a href="#" class="our-services-item-link">Read Details >></a>
                         </li>
-                        <li class="our-services-item">
+                        <li
+                            class="our-services-item"
+                            data-aos="fade-up"
+                            data-aos-duration="1500"
+                            data-aos-delay="500"
+                            data-aos-offset="-100"
+                        >
                             <img
                                 src="./images/reputation-management.png"
                                 alt="reputation-management"
@@ -138,17 +184,23 @@
             <!-- End Our Services Section -->
 
             <!-- Contact Us Section -->
-            <div class="contact-us-img mobile">
+            <div class="contact-us-img mobile" data-aos="fade-up" data-aos-duration="1500">
                 <img src="./images/contact-us.png" alt="contact-us" />
             </div>
             <section id="contact-us" class="contact-us">
                 <div class="wrapper contact-us-wrapper">
-                    <h2 class="heading-underline">Contact Us</h2>
+                    <h2 class="heading-underline" data-aos="fade-up" data-aos-duration="1500">
+                        Contact Us
+                    </h2>
                     <div class="contact-us-content">
-                        <form class="form contact-us-form">
+                        <form
+                            class="form contact-us-form"
+                            data-aos="fade-up"
+                            data-aos-duration="1500"
+                        >
                             <div class="form-group">
                                 <label for="firstname" class="form-label">Name</label>
-                                <div style="display: flex; gap: 16px">
+                                <div class="contact-us-name-inputs">
                                     <input
                                         class="form-input"
                                         type="text"
@@ -203,7 +255,7 @@
                                 Send
                             </button>
                         </form>
-                        <div class="contact-us-img">
+                        <div class="contact-us-img" data-aos="fade-up" data-aos-duration="1500">
                             <img src="./images/contact-us.png" alt="contact-us" />
                         </div>
                     </div>
@@ -223,23 +275,63 @@
                         <ul class="footer-links">
                             <li class="footer-link">
                                 <a href="#" title="Tretify on Facebook"
-                                    ><img src="./images/facebook.svg" alt="facebook"
-                                /></a>
+                                    ><svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="100%"
+                                        height="100%"
+                                        viewBox="0 0 48 48"
+                                        fill="none"
+                                    >
+                                        <path
+                                            d="M44 24C44 12.96 35.04 4 24 4C12.96 4 4 12.96 4 24C4 33.68 10.88 41.74 20 43.6V30H16V24H20V19C20 15.14 23.14 12 27 12H32V18H28C26.9 18 26 18.9 26 20V24H32V30H26V43.9C36.1 42.9 44 34.38 44 24Z"
+                                            fill="#F0F0F0"
+                                        /></svg
+                                ></a>
                             </li>
                             <li class="footer-link">
                                 <a href="#" title="Tretify on Instagram"
-                                    ><img src="./images/instagram.svg" alt="instagram"
-                                /></a>
+                                    ><svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="100%"
+                                        height="100%"
+                                        viewBox="0 0 48 48"
+                                        fill="none"
+                                    >
+                                        <path
+                                            d="M26.056 4.00197C27.5155 3.99637 28.9749 4.01104 30.434 4.04597L30.822 4.05997C31.27 4.07597 31.712 4.09597 32.246 4.11997C34.374 4.21997 35.826 4.55597 37.1 5.04997C38.42 5.55797 39.532 6.24597 40.644 7.35797C41.6608 8.35719 42.4477 9.56587 42.95 10.9C43.444 12.174 43.78 13.628 43.88 15.756C43.904 16.288 43.924 16.732 43.94 17.18L43.952 17.568C43.9875 19.0264 44.0029 20.4852 43.998 21.944L44 23.436V26.056C44.0049 27.5155 43.9896 28.9749 43.954 30.434L43.942 30.822C43.926 31.27 43.906 31.712 43.882 32.246C43.782 34.374 43.442 35.826 42.95 37.1C42.4493 38.4355 41.6622 39.6452 40.644 40.644C39.6439 41.6606 38.4346 42.4475 37.1 42.95C35.826 43.444 34.374 43.78 32.246 43.88C31.712 43.904 31.27 43.924 30.822 43.94L30.434 43.952C28.975 43.9875 27.5155 44.0029 26.056 43.998L24.564 44H21.946C20.4865 44.0049 19.0271 43.9896 17.568 43.954L17.18 43.942C16.7052 43.9248 16.2305 43.9048 15.756 43.882C13.628 43.782 12.176 43.442 10.9 42.95C9.56537 42.4487 8.35648 41.6616 7.358 40.644C6.34009 39.6446 5.55245 38.4351 5.05 37.1C4.556 35.826 4.22 34.374 4.12 32.246C4.09773 31.7714 4.07773 31.2967 4.06 30.822L4.05 30.434C4.01313 28.9749 3.99646 27.5155 4 26.056V21.944C3.99442 20.4852 4.00909 19.0264 4.044 17.568L4.058 17.18C4.074 16.732 4.094 16.288 4.118 15.756C4.218 13.626 4.554 12.176 5.048 10.9C5.55075 9.56521 6.33993 8.35686 7.36 7.35997C8.35779 6.34148 9.56593 5.55312 10.9 5.04997C12.176 4.55597 13.626 4.21997 15.756 4.11997L17.18 4.05997L17.568 4.04997C19.0264 4.01312 20.4852 3.99645 21.944 3.99997L26.056 4.00197ZM24 14.002C22.675 13.9832 21.3595 14.228 20.13 14.7221C18.9004 15.2162 17.7813 15.9497 16.8377 16.8801C15.8941 17.8104 15.1448 18.9191 14.6334 20.1415C14.122 21.364 13.8586 22.6759 13.8586 24.001C13.8586 25.3261 14.122 26.638 14.6334 27.8605C15.1448 29.0829 15.8941 30.1915 16.8377 31.1219C17.7813 32.0522 18.9004 32.7858 20.13 33.2798C21.3595 33.7739 22.675 34.0187 24 34C26.6522 34 29.1957 32.9464 31.0711 31.071C32.9464 29.1957 34 26.6521 34 24C34 21.3478 32.9464 18.8043 31.0711 16.9289C29.1957 15.0535 26.6522 14.002 24 14.002ZM24 18.002C24.797 17.9873 25.589 18.1316 26.3296 18.4264C27.0702 18.7212 27.7447 19.1607 28.3136 19.7191C28.8824 20.2775 29.3344 20.9436 29.6429 21.6787C29.9514 22.4137 30.1104 23.2028 30.1105 24C30.1107 24.7971 29.952 25.5863 29.6437 26.3214C29.3354 27.0565 28.8837 27.7229 28.315 28.2815C27.7463 28.84 27.072 29.2797 26.3315 29.5748C25.5909 29.8699 24.799 30.0144 24.002 30C22.4107 30 20.8846 29.3678 19.7594 28.2426C18.6341 27.1174 18.002 25.5913 18.002 24C18.002 22.4087 18.6341 20.8826 19.7594 19.7573C20.8846 18.6321 22.4107 18 24.002 18L24 18.002ZM34.5 11.002C33.8548 11.0278 33.2446 11.3023 32.7972 11.7679C32.3498 12.2336 32.1 12.8542 32.1 13.5C32.1 14.1457 32.3498 14.7664 32.7972 15.232C33.2446 15.6977 33.8548 15.9722 34.5 15.998C35.163 15.998 35.7989 15.7346 36.2678 15.2657C36.7366 14.7969 37 14.161 37 13.498C37 12.8349 36.7366 12.199 36.2678 11.7302C35.7989 11.2614 35.163 10.998 34.5 10.998V11.002Z"
+                                            fill="#F0F0F0"
+                                        /></svg
+                                ></a>
                             </li>
                             <li class="footer-link">
                                 <a href="#" title="Tretify on Whatsapp"
-                                    ><img src="./images/whatsapp.svg" alt="whatsapp"
-                                /></a>
+                                    ><svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="100%"
+                                        height="100%"
+                                        viewBox="0 0 48 48"
+                                        fill="none"
+                                    >
+                                        <path
+                                            d="M24.002 4C35.048 4 44.002 12.954 44.002 24C44.002 35.046 35.048 44 24.002 44C20.4675 44.0057 16.9953 43.0703 13.942 41.29L4.01 44L6.714 34.064C4.93218 31.0097 3.99609 27.536 4.002 24C4.002 12.954 12.956 4 24.002 4ZM17.186 14.6L16.786 14.616C16.527 14.6318 16.274 14.6998 16.042 14.816C15.825 14.9389 15.627 15.0924 15.454 15.272C15.214 15.498 15.078 15.694 14.932 15.884C14.1922 16.8458 13.7939 18.0266 13.8 19.24C13.804 20.22 14.06 21.174 14.46 22.066C15.278 23.87 16.624 25.78 18.4 27.55C18.828 27.976 19.248 28.404 19.7 28.802C21.9068 30.7449 24.5365 32.1461 27.38 32.894L28.516 33.068C28.886 33.088 29.256 33.06 29.628 33.042C30.2105 33.0119 30.7792 32.8542 31.294 32.58C31.5559 32.4451 31.8115 32.2983 32.06 32.14C32.06 32.14 32.146 32.084 32.31 31.96C32.58 31.76 32.746 31.618 32.97 31.384C33.136 31.212 33.28 31.01 33.39 30.78C33.546 30.454 33.702 29.832 33.766 29.314C33.814 28.918 33.8 28.702 33.794 28.568C33.786 28.354 33.608 28.132 33.414 28.038L32.25 27.516C32.25 27.516 30.51 26.758 29.446 26.274C29.3347 26.2254 29.2153 26.1976 29.094 26.192C28.9571 26.1779 28.8189 26.1933 28.6885 26.2371C28.5581 26.281 28.4386 26.3522 28.338 26.446C28.328 26.442 28.194 26.556 26.748 28.308C26.665 28.4195 26.5507 28.5038 26.4196 28.5501C26.2885 28.5964 26.1466 28.6026 26.012 28.568C25.8817 28.5331 25.754 28.4889 25.63 28.436C25.382 28.332 25.296 28.292 25.126 28.22C23.9781 27.7191 22.9154 27.0423 21.976 26.214C21.724 25.994 21.49 25.754 21.25 25.522C20.4632 24.7685 19.7774 23.916 19.21 22.986L19.092 22.796C19.0072 22.6683 18.9387 22.5306 18.888 22.386C18.812 22.092 19.01 21.856 19.01 21.856C19.01 21.856 19.496 21.324 19.722 21.036C19.942 20.756 20.128 20.484 20.248 20.29C20.484 19.91 20.558 19.52 20.434 19.218C19.874 17.85 19.294 16.488 18.698 15.136C18.58 14.868 18.23 14.676 17.912 14.638C17.804 14.626 17.696 14.614 17.588 14.606C17.3194 14.5927 17.0503 14.5953 16.782 14.614L17.184 14.598L17.186 14.6Z"
+                                            fill="#F0F0F0"
+                                        /></svg
+                                ></a>
                             </li>
                             <li class="footer-link">
                                 <a href="#" title="Tretify on Email"
-                                    ><img src="./images/email.svg" alt="email"
-                                /></a>
+                                    ><svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="100%"
+                                        height="100%"
+                                        viewBox="0 0 48 48"
+                                        fill="none"
+                                    >
+                                        <path
+                                            d="M37.46 10.8199L34.9 12.8199L24 20.9199L13.1 12.7399L10.54 10.7399C9.93691 10.241 9.2007 9.93003 8.42257 9.84545C7.64445 9.76087 6.85861 9.90643 6.16241 10.2641C5.46621 10.6218 4.89025 11.1759 4.50588 11.8577C4.1215 12.5395 3.94561 13.3191 3.99999 14.0999V37.2799C3.99999 38.0013 4.28657 38.6932 4.79666 39.2033C5.30676 39.7134 5.99861 40 6.72 40H13.1V24.5599L24 32.74L34.9 24.5599V40H41.28C42.0014 40 42.6932 39.7134 43.2033 39.2033C43.7134 38.6932 44 38.0013 44 37.2799V14.0999C44.0376 13.3259 43.8494 12.5576 43.4585 11.8884C43.0676 11.2192 42.4907 10.678 41.7979 10.3306C41.1052 9.98318 40.3264 9.84447 39.5563 9.93134C38.7862 10.0182 38.0579 10.3269 37.46 10.8199Z"
+                                            fill="#F0F0F0"
+                                        /></svg
+                                ></a>
                             </li>
                         </ul>
                         <p class="footer-address">Jl. Rawa Belong No. XIX, Jakarta Barat, 178980</p>
@@ -253,6 +345,13 @@
         <script src="https://unpkg.com/lucide@latest"></script>
         <script>
             lucide.createIcons()
+        </script>
+        <!-- AOS -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                once: true,
+            })
         </script>
         <!-- Main Script -->
         <script src="main.js"></script>
